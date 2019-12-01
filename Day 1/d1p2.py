@@ -18,6 +18,6 @@ for line in lines:
         line_num = int(line)
         sum_ += recursive_fuel(line_num)
     except ValueError:
-        break
+        continue
 
 print(sum_)
