@@ -5,7 +5,7 @@ with open("input.txt") as f:
 
 
 def recusrive_fuel(fuel: int) -> int:
-    if fuel <= 0:
+    if fuel == 0:
         return 0
     needed_fuel = fuel // 3 - 2
     if needed_fuel < 0:
