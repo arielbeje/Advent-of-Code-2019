@@ -1,8 +1,6 @@
 with open("input.txt", "r") as f:
     # Remove newline from each line
-    lines = [line[:-1].split(")") for line in f.readlines()]
-
-orbit_list = [line for line in lines]
+    orbit_list = [line[:-1].split(")") for line in f.readlines()]
 
 orbit_dict = dict()
 
@@ -29,5 +27,5 @@ for orbit in orbit_list:
 
 sum_ = 0
 for orbit in orbit_dict:
-    sum += count_connections(orbit)
+    sum_ += count_connections(orbit)
 print(sum_)
